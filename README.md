@@ -1,12 +1,10 @@
-# PatternExam
-Repository with second (practical) task in Patterns discipline exam
-
 # Інтеграція нового модуля для зберігання даних
 
 ## Опис проєкту
 Цей проєкт демонструє вирішення завдання інтеграції нового модуля для зберігання даних у систему, яка використовує інтерфейс `StorageProvider` для взаємодії із провайдерами зберігання. Новий модуль — це хмарне сховище, представлене стороннім API `CloudStorageService`, яке не реалізує `StorageProvider`. Щоб забезпечити його інтеграцію, використано шаблон проєктування **Adapter**.
 
 ---
+
 
 ## Як вирішувалася проблема
 Завдання полягало в інтеграції `CloudStorageService` у систему з такими обмеженнями:
@@ -17,6 +15,7 @@ Repository with second (practical) task in Patterns discipline exam
 Для цього був реалізований адаптер `CloudStorageAdapter`, який працює як "міст" між `StorageProvider` та `CloudStorageService`.
 
 ---
+
 
 ## Реалізовані класи
 
@@ -50,11 +49,14 @@ Repository with second (practical) task in Patterns discipline exam
 
 ---
 
+
 ## UML-діаграма
-Проєкт спроєктовано відповідно до UML-діаграми, яка представлена нижче:
+### Проєкт спроєктовано відповідно до UML-діаграми, яка представлена нижче:
+
 ![UML-diagram.png](UML-diagram.png)
 
 ---
+
 
 ## Висновки
 Цей проєкт демонструє:
